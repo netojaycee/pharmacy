@@ -9,3 +9,6 @@ body {
   /* font-weight: <weight>; */
   /* font-style: normal; */
 }
+
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 10px;}

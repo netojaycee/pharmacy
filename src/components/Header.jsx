@@ -16,57 +16,63 @@ function NavList() {
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 font-semibold"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-secondary transition-colors"
         >
-          Pages
+          Home
         </a>
       </Typography>
+      <hr className="bg-primary lg:hidden" />
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 font-semibold"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-secondary transition-colors"
         >
-          Account
+          About{" "}
         </a>
       </Typography>
+      <hr className="bg-primary lg:hidden" />
+
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 font-semibold"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-secondary transition-colors"
         >
-          Blocks
+          Services{" "}
         </a>
       </Typography>
+      <hr className="bg-primary lg:hidden" />
+
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="p-1 font-semibold"
       >
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-secondary transition-colors"
         >
-          Docs
+          Blog
         </a>
       </Typography>
-      <CustomButton link="/shop" text="Order Now" />
+      <hr className="bg-primary lg:hidden" />
+
     </ul>
   );
 }
@@ -86,13 +92,16 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="w-full px-5 py-2 shadow-md sticky">
+    <div className="w-[95%] mx-auto rounded-md mt-2 px-5 py-3 shadow-md sticky bg-[#F4F8BC] ">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <div>
+        <div className="w-1/5">
           <Logo />
         </div>
-        <div className="hidden lg:block">
+        <div className="w-1/3 hidden lg:block mx-auto">
           <NavList />
+        </div>
+        <div className="hidden lg:block">
+          <CustomButton link="/shop" text="Order Now" />
         </div>
 
         <IconButton

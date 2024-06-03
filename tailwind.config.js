@@ -10,5 +10,19 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".clip-custom": {
+          clipPath: "polygon(0 5%, 100% 0%, 100% 100%, 0% 100%)",
+        },
+        ".clip-custom-sm": {
+          clipPath: "polygon(0 15%, 100% 0%, 100% 100%, 0% 100%)",
+        },
+        ".clip-custom-card": {
+          clipPath: "polygon(0 5%, 100% 0%, 100% 95%, 0% 100%)",
+        },
+      });
+    },
+  ],
 });
