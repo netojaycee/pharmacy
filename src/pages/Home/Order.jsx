@@ -38,7 +38,7 @@ export default function Order() {
             Experience a better way to manage your health. Order now to enjoy
             for our hassle-free pharmacy delivery service today!
           </p>
-          <CustomButton text={"Order Now"} wid={"1/2"} />
+          <CustomButton link="" text={"Order Now"} wid={"1/2"} />
         </div>
         <div className="w-full lg:w-1/2">
           <img src={smartphone} alt="" className="" />

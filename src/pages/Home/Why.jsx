@@ -19,7 +19,7 @@ export default function Why() {
               quick access to the prescriptions they require, and we are here to
               make that happen.
             </p>
-            <CustomButton text={"Read More"} wid={"1/2"} />
+            <CustomButton link="" text={"Read More"} wid={"1/2"} />
           </div>
           <div className="w-full lg:w-1/2">
             <img src={why} alt="" className="" />

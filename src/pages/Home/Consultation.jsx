@@ -32,7 +32,7 @@ Get supplementary information to help you make informed decisions about your hea
           <p className="text-lg text-gray-600 mt-4">
           Sign up for our medication management tools today and experience a simpler, more organized way to manage your health.
           </p>
-          <CustomButton text={"Sign Up"} wid={"1/2"} />
+          <CustomButton link="" text={"Sign Up"} wid={"1/2"} />
         </div>
         <div className="w-full lg:w-1/2">
           <img src={idea} alt="" className="" />

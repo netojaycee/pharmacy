@@ -19,6 +19,7 @@ export default function Hero() {
             <CustomButton
               text={"Order Now"}
               wid={"1/2"}
+              link=""
             />
           {/* </div> */}
         </div>

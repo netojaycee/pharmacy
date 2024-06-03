@@ -10,8 +10,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import CustomButton from "./CustomButton";
 import Logo from "./Logo";
+import { IoIosArrowDown } from "react-icons/io";
 
 function NavList() {
+  const [openMenu, setOpenMenu] = React.useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+  const handleLinkClick = () => {
+    if (openNav === true) {
+      setOpenNav(false);
+    }
+  };
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -38,7 +53,7 @@ function NavList() {
           href="#"
           className="flex items-center hover:text-secondary transition-colors"
         >
-          About{" "}
+          About
         </a>
       </Typography>
       <hr className="bg-primary lg:hidden" />
@@ -47,15 +62,43 @@ function NavList() {
         as="li"
         variant="medium"
         color="blue-gray"
-        className="p-1 font-semibold"
+        className="p-1 font-semibold relative"
+        onMouseEnter={toggleMenu}
+        onMouseLeave={closeMenu}
       >
         <a
           href="#"
           className="flex items-center hover:text-secondary transition-colors"
         >
-          Services{" "}
+          Services
+          <IoIosArrowDown
+            className={`transition-transform ${openMenu ? "rotate-180" : ""}`}
+          />
         </a>
+        {openMenu && (
+          <div className="absolute top-8 left-0 py-2 bg-white shadow-lg rounded-lg w-[230px] 
+          
+          ">
+            <Link
+              onClick={handleLinkClick}
+              className="px-4 py-2  hover:bg-gray-200 gap-2 text-[#797B89] text-sm mb-1 no-underline flex items-center"
+              to=""
+            >
+              For Customers
+            </Link>
+            <Link
+              onClick={() => {
+                handleLinkClick();
+              }}
+              className="px-4 py-2  hover:bg-gray-200 gap-2 text-[#797B89] text-sm mb-1 no-underline flex items-center"
+              to="#"
+            >
+              For Medical Partners
+            </Link>
+          </div>
+        )}
       </Typography>
+
       <hr className="bg-primary lg:hidden" />
 
       <Typography
@@ -72,7 +115,6 @@ function NavList() {
         </a>
       </Typography>
       <hr className="bg-primary lg:hidden" />
-
     </ul>
   );
 }
@@ -101,7 +143,7 @@ export default function Header() {
           <NavList />
         </div>
         <div className="hidden lg:block">
-          <CustomButton link="/shop" text="Order Now" />
+          <CustomButton link="/shop" text="Order Now" wid={"full"} />
         </div>
 
         <IconButton

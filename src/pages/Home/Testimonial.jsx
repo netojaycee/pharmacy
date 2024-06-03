@@ -93,7 +93,7 @@ export default function Testimonial() {
         <Slider {...settings}>
           {data.map((item, index) => (
             <div
-              className="p-2 flex flex-col gap-3 bg-white shadow-md items-center text-center rounded-md h-[380px]"
+              className="p-2 flex flex-col gap-3 bg-white shadow-md items-center text-center rounded-md h-[270px] lg:h-[380px]"
               key={index}
             >
               <div className="">
@@ -105,7 +105,7 @@ export default function Testimonial() {
                   value="4"
                 />
               </div>
-              <p className="h-[55%] overflow-hidden text-ellipsis px-3 text-left text-[12px] md:text-[14px] lg:text-[16px]">
+              <p className="h-[35%] lg:h-[55%] mb-3 lg:mb-0 overflow-hidden text-ellipsis px-3 text-left text-[12px] md:text-[14px] lg:text-[16px]">
                 {item.message}
               </p>
               <img src={item.image} alt="" className="rounded-full w-1/5 mx-auto" /> {/* Added `mx-auto` for centering */}

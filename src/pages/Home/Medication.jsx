@@ -43,7 +43,7 @@ export default function Medication() {
             Take control of your health. Sign up to enjoy AI consultations for
             FREE!
           </p>
-          <CustomButton text={"Sign Up"} wid={"1/2"} />
+          <CustomButton link="" text={"Sign Up"} wid={"1/2"} />
         </div>
       </div>
     </div>
