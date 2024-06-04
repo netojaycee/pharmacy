@@ -13,7 +13,7 @@ function CustomButton({ link, text, wid }) {
     <button
       onClick={action}
       // className={`bg-[#4fac71] px-4 py-2 font-semibold text-white justify-center rounded-md hover:bg-secondary flex items-center gap-1 w-${wid}`}
-      className={`bg-primary px-4 py-2 font-semibold text-white justify-center rounded-md hover:bg-secondary flex items-center gap-1 w-${wid} `}
+      className={`bg-primary px-4 py-2 font-semibold text-white justify-center rounded-md hover:bg-secondary flex items-center gap-1 w-${wid} w-1/2 `}
     >
       {text}
       <FaArrowRight />

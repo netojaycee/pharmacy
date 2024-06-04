@@ -7,38 +7,38 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-2 w-full bottom-0 flex flex-col gap-2 clip-custom">
+    <footer className="bg-white text-black p-2 w-full bottom-0 flex flex-col gap-2 clip-custom">
       <div className="clip-custom-sm mt-5">
         <Newsletter />
       </div>
       <div className="mx-auto w-full lg:px-8 px-0">
-        <div className="flex flex-col lg:flex-row justify-between lg:items-start  gap-8 p-4 lg:p-8 bg-gray-800 text-white items-left">
-          <div className="flex flex-col my-0 lg:my-auto w-full lg:w-2/5">
+        <div className="flex flex-col lg:flex-row justify-between lg:items-start  gap-8 p-4 lg:p-8 bg-white text-black items-left">
+          <div className="flex flex-col my-0 lg:my-auto w-full lg:w-1/5">
             <Logo />
             <p className="mt-2">Your Move Towards Empowered Health...</p>
           </div>
           <div className="flex flex-col items-start lg:items-start w-full lg:w-1/5 ">
             <h4 className="font-bold">Links</h4>
-            <Link to="" className="mt-2 hover:underline">
+            <Link to="" className="mt-2 hover:underline hover:text-secondary">
               Shop
             </Link>
-            <Link to="/blog" className="mt-2 hover:underline">
+            <Link to="/blog" className="mt-2 hover:underline hover:text-secondary">
               Blog
             </Link>
-            <Link to="" className="mt-2 hover:underline">
+            <Link to="" className="mt-2 hover:underline hover:text-secondary">
               FAQ
             </Link>
           </div>
           <div className="flex flex-col items-start lg:items-start w-full lg:w-1/5 ">
             <h4 className="font-bold">Company</h4>
-            <Link to="/about" className="mt-2 hover:underline">
+            <Link to="/about" className="mt-2 hover:underline hover:text-secondary">
               About Us
             </Link>
 
-            <Link to="/press" className="mt-2 hover:underline">
+            <Link to="/press" className="mt-2 hover:underline hover:text-secondary">
               Privacy
             </Link>
-            <Link to="/terms" className="mt-2 hover:underline">
+            <Link to="/terms" className="mt-2 hover:underline hover:text-secondary">
               Terms of Service
             </Link>
           </div>
@@ -54,12 +54,12 @@ export default function Footer() {
         <div className="mt-2 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-2 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-2 text-center font-normal text-white md:mb-0"
+            className="mb-2 text-center font-normal text-black md:mb-0"
           >
             &copy; {currentYear} <Link to="/">Medmova</Link>. All Rights
             Reserved.
           </Typography>
-          <div className="flex gap-4 text-white sm:justify-center">
+          <div className="flex gap-4 text-black sm:justify-center">
             <Typography
               as="a"
               href="#"

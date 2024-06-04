@@ -85,7 +85,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <div className="bg-gray-200 w-full flex flex-col gap-3 pt-5 clip-custom-card lg:pb-8">
+    <div className="bg-white w-full flex flex-col gap-3 pt-5 clip-custom-card lg:pb-8">
       <h2 className="text-xl lg:text-3xl font-bold leading-tight text-gray-800 text-center lg:mt-4 mt-10">
         What they are saying about us
       </h2>

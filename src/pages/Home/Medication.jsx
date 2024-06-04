@@ -5,7 +5,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 export default function Medication() {
   return (
-    <div className="pb-8 bg-gray-200 w-full flex flex-col gap-3 pt-5 clip-custom-card ">
+    <div className="pb-8 bg-white w-full flex flex-col gap-3 pt-5 clip-custom-card ">
       <h2 className="text-xl lg:text-3xl font-bold leading-tight text-gray-800 text-center lg:mt-4 mt-10">
         Medication Management
       </h2>
@@ -19,8 +19,8 @@ export default function Medication() {
             reminders? We've got you covered! Our comprehensive medication
             management tools take the stress out of managing your health.
           </p>
-          <div className="p-8 flex flex-row bg-white shadow-md shadow-gray-400 gap-3 items-center">
-            <div className="bg-gray-200 p-3">
+          <div className="p-8 flex flex-row bg-white shadow-md shadow-gray-400 gap-3 items-center outer-div">
+            <div className="bg-gray-200 hover-target p-3">
               <IoMdCheckmark className="" />
             </div>
 
@@ -29,9 +29,9 @@ export default function Medication() {
               refill alerts and progress check-ins.
             </p>
           </div>
-          <div className="p-8 flex flex-row bg-white shadow-md shadow-gray-400 gap-3 items-center">
+          <div className="p-8 flex flex-row bg-white shadow-md shadow-gray-400 gap-3 items-center outer-div">
             {/* <IoMdCheckmarkCircleOutline color="red"  className=" p-5 text-gray-500" /> */}
-            <div className="bg-gray-200 p-3">
+            <div className="bg-gray-200 hover-target p-3">
               <IoMdCheckmark className="" />
             </div>
             <p className="">

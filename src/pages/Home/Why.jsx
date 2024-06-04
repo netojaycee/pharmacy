@@ -5,7 +5,7 @@ import why from "@/assets/images/19.png";
 export default function Why() {
   return (
     <>
-      <div className="bg-gray-200 w-full clip-custom-card">
+      <div className="bg-white w-full clip-custom-card">
         <div className="flex flex-col lg:flex-row lg:items-center gap-4 p-5  w-[98%] lg:w-[90%] mx-auto ">
           <div className="w-full lg:w-1/2 flex flex-col justify-center gap-3">
           <h2 className="text-xl lg:text-3xl font-bold leading-tight text-gray-800 text-left lg:mt-4 mt-10">

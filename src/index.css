@@ -12,3 +12,7 @@ body {
 
 .slick-list {margin: 0 -5px;}
 .slick-slide>div {padding: 0 10px;}
+
+.outer-div:hover .hover-target {
+  background-color: #06752E; /* Replace with your desired background color */
+}

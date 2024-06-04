@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import CustomButton from "./CustomButton";
 import Logo from "./Logo";
 import { IoIosArrowDown } from "react-icons/io";
+import { FaArrowRight } from "react-icons/fa6";
 
 function NavList() {
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -57,7 +58,6 @@ function NavList() {
         </a>
       </Typography>
       <hr className="bg-primary lg:hidden" />
-
       <Typography
         as="li"
         variant="medium"
@@ -76,9 +76,11 @@ function NavList() {
           />
         </a>
         {openMenu && (
-          <div className="absolute top-8 left-0 py-2 bg-white shadow-lg rounded-lg w-[230px] 
+          <div
+            className="absolute top-8 left-0 py-2 bg-white shadow-lg rounded-lg w-[230px] 
           
-          ">
+          "
+          >
             <Link
               onClick={handleLinkClick}
               className="px-4 py-2  hover:bg-gray-200 gap-2 text-[#797B89] text-sm mb-1 no-underline flex items-center"
@@ -98,9 +100,7 @@ function NavList() {
           </div>
         )}
       </Typography>
-
       <hr className="bg-primary lg:hidden" />
-
       <Typography
         as="li"
         variant="medium"
@@ -114,6 +114,14 @@ function NavList() {
           Blog
         </a>
       </Typography>
+      <hr className="bg-primary lg:hidden" />
+      <Link
+        to="/shop"
+        className="bg-primary px-4 py-2 font-semibold text-white justify-center rounded-md hover:bg-secondary flex items-center gap-1 w-full"
+      >
+        Order Now
+        <FaArrowRight />
+      </Link>{" "}
       <hr className="bg-primary lg:hidden" />
     </ul>
   );
@@ -134,17 +142,17 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="w-[95%] mx-auto rounded-md mt-2 px-5 py-3 shadow-md sticky bg-[#F4F8BC] ">
+    <div className="w-[95%] mx-auto rounded-md mt-2 px-5 py-3 shadow-md sticky bg-white ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="w-1/5">
           <Logo />
         </div>
-        <div className="w-1/3 hidden lg:block mx-auto">
+        <div className=" hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <CustomButton link="/shop" text="Order Now" wid={"full"} />
-        </div>
+        </div> */}
 
         <IconButton
           variant="text"
